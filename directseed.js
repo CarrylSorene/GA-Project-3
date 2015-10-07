@@ -26,20 +26,20 @@ robert.save(function(err, user) {
   console.log('Robert saved');
 });
 
-var booking = new Booking({
+var booking1 = new Booking({
   user: robert,
   date: 2015-10-08
 });
 
-booking.save(function(err, booking) {
+booking1.save(function(err, booking1) {
   if(err) console.log(err);
   console.log('Booking saved');
 
   Booking
-  .findOne(booking.id)
+  .findOne(booking1.id)
   .populate('user')
-  .exec(function(err, booking) {
+  .exec(function(err, booking1) {
     if (err) console.log(err);
-    console.log('The user of the new booking is', booking.user);
+    console.log('The user of the new booking is', booking1.user);
   });
 });
