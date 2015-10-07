@@ -1,7 +1,9 @@
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema
+var User = require('./user')
 
 var bookingSchema = new mongoose.Schema({
-  userId: {type: Number, ref: 'User'},
+  user: [{type: Schema.Types.ObjectId, ref: 'User'}],
   date: Date
 })
 
