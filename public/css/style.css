@@ -1,38 +1,8 @@
 body {
-    background: url("../img/tennis.jpg") no-repeat center fixed;
-    
+    background: url("../img/Tennis_shake_hands_after_match.jpg");
     background-size: cover;
-    width: auto;
-    height: auto;
-    
-}
-
-
-.form-signin {
-       display: inline-block;
-    margin-left: 40%;
-    margin-top: 25%;
-    width: 300px;
-      }
-h1 {
-        font-color: white;
-        color: white;
-        text-decoration: white;
-      border-style: solid;
-    border-width: 5px;
-    font-size: 1.25em;
-    margin-right: 93%;
-
-      }
-
-      h2{
-        color:white;
-      }
-      h4{
-        color:white;
-      }
-
-form {
-  position: relative;
-  width: 30%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #022F02;
 }
