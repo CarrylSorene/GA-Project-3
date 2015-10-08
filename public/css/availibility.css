@@ -1,9 +1,19 @@
+th {
+  text-align: center;
+}
+
+tr {
+  border: 2px solid #d0d0d0;
+}
+
 td {
   width: 3rem;
   height: 3rem;
   vertical-align: top;
+  border: 1px solid #d0d0d0;
+  padding: 0.2rem;
 }
-.other-month {
+.unavailable {
   color: #c0c0c0;
 }
 

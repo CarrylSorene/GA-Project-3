@@ -1,14 +1,6 @@
   <div class="container">
-    <h1>Player Availibility</h1>
-    <div class="switch">
-      <label>
-        Show partners
-        <input type="checkbox">
-        <span class="lever" id="mode-toggle"></span>
-        Set my availibility
-      </label>
-    </div>
-
+    <h1>Availibility</h1>
+    <div class="row">
       <table class="bordered">
         <thead>
           <tr>
@@ -67,6 +59,17 @@
         </tbody>
       </table>
     </div>
+    <div class="row">
+      <div class="switch">
+        <label>
+          <span id="show-them" class="red-text">Show partners</span>
+          <input type="checkbox" id="mode-switch">
+          <span class="lever"></span>
+          <span id="show-me">Set my availibility</span>
+        </label>
+      </div>
+    </div>
+  </div>
   <link rel="stylesheet" href="/css/availibility.css">
   <script src="/js/moment.min.js"></script>
   <script src="/js/availibility.js"></script>
