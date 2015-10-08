@@ -11,40 +11,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
-   <nav>
-      <div class="nav-wrapper green darken-4">
-        <a href="/" class="brand-logo">WeSport</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="/signup">Sign Up</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="/"></a>Sign Up</li>
-        </ul>
-      </div>
-    </nav>
-
+    <header>
+     <nav>
+        <div class="nav-wrapper green darken-4">
+          <a href="/" class="brand-logo">WeSport</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/signup">Sign Up</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="/"></a>Sign Up</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
     <%- body %>
-
-      <footer class="page-footer green darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">Footer Left</p>
+    </main>
+          <footer class="page-footer green darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h4 class="white-text">Quick Links</h4>
+                <p class="grey-text text-lighten-4">
+                <ul>
+                  <li><a class="grey-text text-lighten-3 qlinks" href="#!">About Us</a></li>
+                  <li><a class="grey-text text-lighten-3 qlinks" href="#!">FAQ</a></li>
+                  <li><a class="grey-text text-lighten-3 qlinks" href="#!">Terms of Use</a></li>
+                
+                </ul>
+                </p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h4 class="white-text">Connect and Share</h4>
+                <ul>
+                  <li class="social-media"><a class="grey-text text-lighten-3 logo" href="http://www.facebook.com"><img src="./img/fb.png" alt="Facebook"></a></li>
+                  <li class="social-media"><a class="grey-text text-lighten-3 logo" href="http://www.twitter.com"><img src="./img/tw.png" alt="Twitter"></a></li>
+                  <li class="social-media"><a class="grey-text text-lighten-3 logo" href="http://www.instagram.com"><img src="./img/ig.png" alt="Instagram"></a></li>
+                  
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col l4 offset-l2 s12">
-              <a class="grey-text text-lighten-3 logo" href="#!"><img src="./img/fb.png" alt="Facebook"</a>
-              <a class="grey-text text-lighten-3 logo" href="#!"><img src="./img/tw.png" alt="Twitter"</a>
-              <a class="grey-text text-lighten-3 logo" href="#!"><img src="./img/ig.png" alt="Instagram"</a>
+          <div class="footer-copyright">
+            <div class="container">
+            <!-- <p>Text</p>
+            <a class="grey-text text-lighten-4 right" href="#!">Text</a> -->
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-        </div>
-      </div>
-    </footer>
+        </footer>
+      
   </body>
 </html>
