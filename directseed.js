@@ -13,39 +13,39 @@ var Booking = require('./app/models/booking');
 // });
 
 //User1
-var robert = new User({
-  name: 'Robert Stewart',
-  local: {
-    email: 'robertstewart@gmail.com',
-    password: ''
-  },
-  dob: 1960-02-12,
-  gender: 'Male',
-  rating: 1
-});
+// var robert = new User({
+//   name: 'Robert Stewart',
+//   local: {
+//     email: 'robertstewart@gmail.com',
+//     password: ''
+//   },
+//   dob: 1970-02-12,
+//   gender: 'Male',
+//   rating: 1
+// });
 
-robert.save(function(err, user) {
-  if (err) console.log(err);
-  console.log('Robert saved');
-});
+// robert.save(function(err, user) {
+//   if (err) console.log(err);
+//   console.log('Robert saved');
+// });
 
-var booking1 = new Booking({
-  user: robert,
-  date: 2015-10-08
-});
+// var booking1 = new Booking({
+//   user: robert,
+//   date: 2015-10-08
+// });
 
-booking1.save(function(err, booking1) {
-  if(err) console.log(err);
-  console.log('Booking saved');
+// booking1.save(function(err, booking1) {
+//   if(err) console.log(err);
+//   console.log('Booking saved');
 
-  Booking
-  .findOne(booking1.id)
-  .populate('user')
-  .exec(function(err, booking1) {
-    // console.log('Booking1: ', booking1);
-    if (err) console.log(err);
-  });
-});
+//   Booking
+//   .findOne(booking1.id)
+//   .populate('user')
+//   .exec(function(err, booking1) {
+//     // console.log('Booking1: ', booking1);
+//     if (err) console.log(err);
+//   });
+// });
 
 // //User2
 // var casey = new User({
