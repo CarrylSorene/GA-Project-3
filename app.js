@@ -12,8 +12,8 @@ var session = require('express-session');
 
 
 var configDB = require('./config/database');
-// var expressLayouts = require('express-ejs-layouts');
-// app.use(expressLayouts);
+var expressLayouts = require('express-ejs-layouts');
+app.use(expressLayouts);
 
 //database setup
 mongoose.connect(configDB.url);
@@ -33,15 +33,13 @@ app.use(flash())
 
 require('./app/routes.js')(app, passport);
 
-
-
-var directSeed = require('./directseed');
+// var directSeed = require('./directseed');
 
 app.engine('ejs', require('ejs').renderFile);
 app.set('views', './views');
 
 // // Old Routes
-// app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 // app.use('/users', require('./controllers/users'))
 
 // app.get('/', function(req, res){
