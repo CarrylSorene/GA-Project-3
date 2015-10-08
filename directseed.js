@@ -4,13 +4,13 @@ var Schema = mongoose.Schema
 var User = require('./app/models/user');
 var Booking = require('./app/models/booking');
 
-// User.remove({}, function(err) {
-//   console.log('user collection removed');
-// });
+User.remove({}, function(err) {
+  console.log('user collection removed');
+});
 
-// Booking.remove({}, function(err) {
-//   console.log('booking collection removed');
-// });
+Booking.remove({}, function(err) {
+  console.log('booking collection removed');
+});
 
 //User1
 // var robert = new User({
