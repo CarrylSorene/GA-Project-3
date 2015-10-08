@@ -1,8 +1,34 @@
-body {
-    /*background: url("../img/Tennis_shake_hands_after_match.jpg");*/
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    /*background-color: #022F02;*/
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.brand-logo {
+  margin-left: 5px;
+}
+
+
+.qlinks {
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 5px;
+}
+
+.social-media {
+  display: inline-block;
+}
+
+.logo {
+  margin: 0 5px;
 }

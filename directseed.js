@@ -22,7 +22,7 @@ var robert = new User({
   },
   dob: 1970-02-12,
   gender: 'Male',
-  rating: 1
+  rating: 2
 });
 
 robert.save(function(err, user) {
@@ -32,7 +32,7 @@ robert.save(function(err, user) {
 
 var booking1 = new Booking({
   user: robert,
-  date: 2015-10-08
+  date: 2015-10-09
 });
 
 booking1.save(function(err, booking1) {
@@ -58,7 +58,7 @@ var casey = new User({
   },
   dob: 2001-12-03,
   gender: 'Male',
-  rating: 1
+  rating: 3
 });
 
 casey.save(function(err, user) {
@@ -68,7 +68,7 @@ casey.save(function(err, user) {
 
 var booking2 = new Booking({
   user: casey,
-  date: 2015-10-08
+  date: 2015-10-09
 });
 
 booking2.save(function(err, booking2) {
@@ -94,7 +94,7 @@ var willa = new User({
   },
   dob: 1994-09-12,
   gender: 'Female',
-  rating: 1
+  rating: 3
 });
 
 willa.save(function(err, user) {
@@ -838,6 +838,367 @@ booking30.save(function(err, booking30) {
   .findOne(booking30.id)
   .populate('user')
   .exec(function(err, booking30) {
+    if (err) console.log(err);
+  });
+});
+
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
+    if (err) console.log(err);
+  });
+});
+
+//Booking
+var booking = new Booking({
+  user: ,
+  date: 2015-10-
+});
+
+booking.save(function(err, booking) {
+  if(err) console.log(err);
+  // console.log('Booking saved');
+
+   Booking
+  .findOne(booking.id)
+  .populate('user')
+  .exec(function(err, booking) {
     if (err) console.log(err);
   });
 });
