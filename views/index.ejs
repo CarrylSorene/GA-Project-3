@@ -1,6 +1,9 @@
     <div class="container">
       <h1>WeSport</h1>
       <h2>Find the perfect match</h2>
+      <% if (message.length > 0) { %>
+      <div class="red-text red lighten-5 z-depth-1 row"><i class="small material-icons">info</i><%= message %></div>
+      <% } %>
       <div class="row">
         <form class="col l8 offset-l2 s12 card" action="/login" method="post">
           <div class="row">
