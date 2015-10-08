@@ -38,22 +38,7 @@ var directSeed = require('./directseed');
 app.engine('ejs', require('ejs').renderFile);
 app.set('views', './views');
 
-// // Old Routes
 app.use(express.static(__dirname + '/public'));
-// app.use('/users', require('./controllers/users'))
-
-// app.get('/', function(req, res){
-//   res.render('index');
-// })
-
-// //Temporary routes to test functionality
-// app.get('/availibility', function(req, res){
-//   res.render('availibility');
-// })
-
-// app.get('/register', function(req, res){
-//   res.render('register');
-// })
 
 app.listen(port);
 console.log('Server up on port', port);
