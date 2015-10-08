@@ -4,29 +4,25 @@ var Schema = mongoose.Schema
 var User = require('./app/models/user');
 var Booking = require('./app/models/booking');
 
-User.remove({}, function(err) {
-  console.log('user collection removed');
-});
+// User.remove({}, function(err) {
+//   console.log('user collection removed');
+// });
 
-Booking.remove({}, function(err) {
-  console.log('booking collection removed');
-});
+// Booking.remove({}, function(err) {
+//   console.log('booking collection removed');
+// });
 
 //User1
 var robert = new User({
   name: 'Robert Stewart',
   local: {
     email: 'robertstewart@gmail.com',
-    password: 'password'
+    password: ''
   },
-  dob: 1970-02-15,
+  dob: 1960-02-12,
   gender: 'Male',
   rating: 1
 });
-
-// password: 'password'
-
-
 
 robert.save(function(err, user) {
   if (err) console.log(err);
@@ -51,40 +47,40 @@ booking1.save(function(err, booking1) {
   });
 });
 
-//User2
-var casey = new User({
-  name: 'Casey Bennett',
-  local: {
-    email: 'caseybennett@gmail.com',
-    password: 'password'
-  },
-  dob: 2001-12-03,
-  gender: 'Male',
-  rating: 1
-});
+// //User2
+// var casey = new User({
+//   name: 'Casey Bennett',
+//   local: {
+//     email: 'caseybennett@gmail.com',
+//     password: ''
+//   },
+//   dob: 2001-12-03,
+//   gender: 'Male',
+//   rating: 1
+// });
 
-casey.save(function(err, user) {
-  if (err) console.log(err);
-  console.log('Casey saved');
-});
+// casey.save(function(err, user) {
+//   if (err) console.log(err);
+//   console.log('Casey saved');
+// });
 
-var booking2 = new Booking({
-  user: casey,
-  date: 2015-10-08
-});
+// var booking2 = new Booking({
+//   user: casey,
+//   date: 2015-10-08
+// });
 
-booking2.save(function(err, booking2) {
-  if(err) console.log(err);
-  console.log('Booking saved');
+// booking2.save(function(err, booking2) {
+//   if(err) console.log(err);
+//   console.log('Booking saved');
 
-  Booking
-  .findOne(booking2.id)
-  .populate('user')
-  .exec(function(err, booking2) {
-    // console.log('Booking2: ', booking2);
-    if (err) console.log(err);
-  });
-});
+//   Booking
+//   .findOne(booking2.id)
+//   .populate('user')
+//   .exec(function(err, booking2) {
+//     // console.log('Booking2: ', booking2);
+//     if (err) console.log(err);
+//   });
+// });
 
 // //User3
 
