@@ -1,0 +1,63 @@
+</head>
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <div class="row">
+      <form action="/signup" method="post" class="col l8 offset-l2 s12">
+        <div class="row">
+          <div class="input-field col s12 l6">
+            <input type="text" id="name" name="name" tabindex="1">
+            <label for="name">Enter your name</label>
+          </div>
+          <div class="input-field col s12 l6">
+            <select id="rating" name="rating" class="validate" tabindex="4"> 
+              <option value="">Rate your skill level</option>
+              <option value="0">Beginner</option>
+              <option value="1">Advanced Beginner</option>
+              <option value="2">Intermediate</option>
+              <option value="3">Advanced</option>
+              <option value="4">Club level</option>
+              <option value="5">Professional</option>
+            </select>
+            <label for="rating">Rating</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 l6">
+            <input type="password" id="password" name="password" class="validate" tabindex="2">
+            <label for="password">Enter your password</label>
+          </div>
+          <div class="input-field col s12 l6">
+            <input type="date" id="dob" name="dob" tabindex="5">
+            <label for="dob" class="active">Date of Birth</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 l6">
+            <input type="email" id="email" name="email" class="validate" tabindex="3">
+            <label for="email">Enter your email address</label>
+          </div>
+          <div class="input-field col s12 l6" >
+            <select id="gender" name="gender" class="validate" tabindex="6"> 
+               <option>Not specified</option>
+               <option>Male</option>
+               <option>Female</option>
+            </select>
+            <label for="gender">Gender</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col l6 s12">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Create new user
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l6 s12">
+            Already have an account? <a href="/">Login</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<script src="/js/signup.js"></script>
