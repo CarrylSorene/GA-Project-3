@@ -4,15 +4,16 @@ var Schema = mongoose.Schema
 var User = require('./app/models/user');
 var Booking = require('./app/models/booking');
 
-User.remove({}, function(err) {
-  console.log('user collection removed');
-});
+// User.remove({}, function(err) {
+//   console.log('user collection removed');
+// });
 
-Booking.remove({}, function(err) {
-  console.log('booking collection removed');
-});
+// Booking.remove({}, function(err) {
+//   console.log('booking collection removed');
+// });
 
 //User1
+<<<<<<< HEAD
 // var robert = new User({
 //   name: 'Robert Stewart',
 //   local: {
@@ -37,6 +38,23 @@ Booking.remove({}, function(err) {
 // booking1.save(function(err, booking1) {
 //   if(err) console.log(err);
 //   console.log('Booking saved');
+=======
+var robert = new User({
+  name: 'Robert Stewart',
+  local: {
+    email: 'robertstewart@gmail.com',
+    password: '$2a$08$Ao3y5maKRJysk5XXArgtyuPDf2K1DpsvtO1lgp0hEi2f2kE0ObaHa'
+  },
+  dob: 1970-02-12,
+  gender: 'Male',
+  rating: 1
+});
+
+robert.save(function(err, user) {
+  if (err) console.log(err);
+  console.log('Robert saved');
+});
+>>>>>>> 22f66eb96aa4018034123a3f2eaa1f8fddcfa128
 
 //   Booking
 //   .findOne(booking1.id)
@@ -59,10 +77,24 @@ Booking.remove({}, function(err) {
 //   rating: 1
 // });
 
+<<<<<<< HEAD
 // casey.save(function(err, user) {
 //   if (err) console.log(err);
 //   console.log('Casey saved');
 // });
+=======
+//User2
+var casey = new User({
+  name: 'Casey Bennett',
+  local: {
+    email: 'caseybennett@gmail.com',
+    password: '$2a$08$Ao3y5maKRJysk5XXArgtyuPDf2K1DpsvtO1lgp0hEi2f2kE0ObaHa'
+  },
+  dob: 2001-12-03,
+  gender: 'Male',
+  rating: 1
+});
+>>>>>>> 22f66eb96aa4018034123a3f2eaa1f8fddcfa128
 
 // var booking2 = new Booking({
 //   user: casey,
@@ -225,4 +257,3 @@ Booking.remove({}, function(err) {
 //     // console.log('The user of the new booking is', booking6.user);
 //   });
 // });
-
