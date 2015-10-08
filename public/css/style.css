@@ -1,28 +1,8 @@
 body {
-    /*background: url("../img/Tennis_shake_hands_after_match.jpg");
+    /*background: url("../img/Tennis_shake_hands_after_match.jpg");*/
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: #022F02;*/
+    /*background-color: #022F02;*/
 }
-
-/*.green-darken-4 {
-  background-color: #1b5e20;
-  
-}*/
-
-/*body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-  main {
-    flex: 1 0 auto;
-  }*/
-
-  /*.logo {
-    height: 50px;
-    width: 50px;
-  }*/
