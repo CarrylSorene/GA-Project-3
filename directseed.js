@@ -13,37 +13,12 @@ var Booking = require('./app/models/booking');
 // });
 
 //User1
-<<<<<<< HEAD
-// var robert = new User({
-//   name: 'Robert Stewart',
-//   local: {
-//     email: 'robertstewart@gmail.com',
-//     password: ''
-//   },
-//   dob: 1970-02-12,
-//   gender: 'Male',
-//   rating: 1
-// });
 
-// robert.save(function(err, user) {
-//   if (err) console.log(err);
-//   console.log('Robert saved');
-// });
-
-// var booking1 = new Booking({
-//   user: robert,
-//   date: 2015-10-08
-// });
-
-// booking1.save(function(err, booking1) {
-//   if(err) console.log(err);
-//   console.log('Booking saved');
-=======
 var robert = new User({
   name: 'Robert Stewart',
   local: {
     email: 'robertstewart@gmail.com',
-    password: '$2a$08$Ao3y5maKRJysk5XXArgtyuPDf2K1DpsvtO1lgp0hEi2f2kE0ObaHa'
+    password: '$2a$08$zcLdu3rLFv1L.bzgqs7Og.nw5y1gezdUrSqiRitanbUtchuMGOzI2'
   },
   dob: 1970-02-12,
   gender: 'Male',
@@ -54,18 +29,27 @@ robert.save(function(err, user) {
   if (err) console.log(err);
   console.log('Robert saved');
 });
->>>>>>> 22f66eb96aa4018034123a3f2eaa1f8fddcfa128
 
-//   Booking
-//   .findOne(booking1.id)
-//   .populate('user')
-//   .exec(function(err, booking1) {
-//     // console.log('Booking1: ', booking1);
-//     if (err) console.log(err);
-//   });
-// });
+var booking1 = new Booking({
+  user: robert,
+  date: 2015-10-08
+});
 
-// //User2
+booking1.save(function(err, booking1) {
+  if(err) console.log(err);
+  console.log('Booking saved');
+
+   Booking
+  .findOne(booking1.id)
+  .populate('user')
+  .exec(function(err, booking1) {
+    console.log('Booking1: ', booking1.user);
+    if (err) console.log(err);
+  });
+});
+
+//User2
+
 // var casey = new User({
 //   name: 'Casey Bennett',
 //   local: {
@@ -77,24 +61,10 @@ robert.save(function(err, user) {
 //   rating: 1
 // });
 
-<<<<<<< HEAD
 // casey.save(function(err, user) {
 //   if (err) console.log(err);
 //   console.log('Casey saved');
 // });
-=======
-//User2
-var casey = new User({
-  name: 'Casey Bennett',
-  local: {
-    email: 'caseybennett@gmail.com',
-    password: '$2a$08$Ao3y5maKRJysk5XXArgtyuPDf2K1DpsvtO1lgp0hEi2f2kE0ObaHa'
-  },
-  dob: 2001-12-03,
-  gender: 'Male',
-  rating: 1
-});
->>>>>>> 22f66eb96aa4018034123a3f2eaa1f8fddcfa128
 
 // var booking2 = new Booking({
 //   user: casey,
@@ -146,7 +116,6 @@ var casey = new User({
 //   .populate('user')
 //   .exec(function(err, booking3) {
 //     if (err) console.log(err);
-//     // console.log('The user of the new booking is', booking3.user);
 //   });
 // });
 
@@ -182,7 +151,6 @@ var casey = new User({
 //   .populate('user')
 //   .exec(function(err, booking4) {
 //     if (err) console.log(err);
-//     // console.log('The user of the new booking is', booking4.user);
 //   });
 // });
 
@@ -218,7 +186,6 @@ var casey = new User({
 //   .populate('user')
 //   .exec(function(err, booking5) {
 //     if (err) console.log(err);
-//     // console.log('The user of the new booking is', booking5.user);
 //   });
 // });
 
@@ -254,6 +221,39 @@ var casey = new User({
 //   .populate('user')
 //   .exec(function(err, booking6) {
 //     if (err) console.log(err);
-//     // console.log('The user of the new booking is', booking6.user);
+//   });
+// });
+
+// //User7
+// var ziggy = new User({
+//   name: 'Ziggy Stewart',
+//   local: {
+//     email: 'ziggystew@gmail.com',
+//     password: '$2a$08$zcLdu3rLFv1L.bzgqs7Og.nw5y1gezdUrSqiRitanbUtchuMGOzI2'
+//   },
+//   dob: 2002-04-13,
+//   gender: 'Male',
+//   rating: 1
+// });
+
+// ziggy.save(function(err, user) {
+//   if (err) console.log(err);
+//   console.log('Ziggy saved');
+// });
+
+// var booking7 = new Booking({
+//   user: ziggy,
+//   date: 2015-10-08
+// });
+
+// booking7.save(function(err, booking7) {
+//   if(err) console.log(err);
+//   console.log('Booking saved');
+
+//    Booking
+//   .findOne(booking7.id)
+//   .populate('user')
+//   .exec(function(err, booking7) {
+//     if (err) console.log(err);
 //   });
 // });
