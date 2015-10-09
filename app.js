@@ -33,7 +33,7 @@ app.use(flash())
 
 require('./app/routes.js')(app, passport);
 
-var directSeed = require('./directseed');
+// require('./directseed');
 
 app.engine('ejs', require('ejs').renderFile);
 app.set('views', './views');
