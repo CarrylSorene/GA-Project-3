@@ -1,10 +1,11 @@
 $(document).ready(function(){
   // console.log('Hello world!')
-  addDates()
+  renderDates()
+  renderBookings()
   setListeners()
 })
 
-var addDates = function(){
+var renderDates = function(){
   var thisMonth = moment().format('MMMM')
   $('#month').text(thisMonth)
   var daysAhead = moment().date(1).day()
@@ -18,6 +19,13 @@ var addDates = function(){
       $('#d' + i).html(currentDay.date())
     }
   }
+}
+
+var renderBookings = function(){
+  $.get('/bookings')
+  .done(function(data){
+    console.log(data)
+  })
 }
 
 var setListeners = function(){
