@@ -1,30 +1,35 @@
     <div class="container">
-      <h2>Looking for a tennis partner?</h2>
-      <h3>Find the perfect match</h3>
-      <% if (message.length > 0) { %>
-      <div class="red-text red lighten-5 z-depth-1 row"><i class="small material-icons">info</i><%= message %></div>
-      <% } %>
       <div class="row">
-        <form class="col l8 offset-l2 s12 card" action="/login" method="post">
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="email" id="email" name="email" class="validate">
-              <label for="email">Enter your email address</label>
+        <div class="col l4 s12">
+          <h2>Looking for a tennis partner?</h2>
+          <h3>Find the perfect match</h3>
+          <% if (message.length > 0) { %>
+          <div class="red-text red lighten-5 z-depth-1 row"><i class="small material-icons">info</i><%= message %></div>
+          <% } %>
+          <form action="/login" method="post">
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="email" id="email" name="email" class="validate" tabindex="1">
+                <label for="email">Enter your email address</label>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input type="password" name="password" class="validate">
-              <label for="password">Enter your password</label>
-              <button class="btn waves-effect waves-light" type="submit" name="action">Login
-              </button>
+            <div class="row">
+              <div class="input-field col s12">
+                <input type="password" name="password" class="validate" tabindex="2">
+                <label for="password">Enter your password</label>
+                <button class="btn waves-effect waves-light" type="submit" name="action" tabindex="3">Login
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <a href="/signup">New User? Sign up here!</a>
+            <div class="row">
+              <div class="input-field col s12">
+                <a href="/signup">New User? Sign up here!</a>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
+        <div class="col l6 offset-l2 hide-on-med-and-down">
+          <img class="responsive-img" style="margin-top: 1.78rem;" src="/img/cropped_shake.png">
+        </div>
       </div>
     </div>

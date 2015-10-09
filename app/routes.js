@@ -1,3 +1,6 @@
+var Booking = require('./models/booking')
+var User = require('./models/user')
+
 module.exports = function(app, passport) {
 
 // HOME
@@ -25,7 +28,7 @@ module.exports = function(app, passport) {
     failureFlash : true // allow flash messages
   }));
   
-// PROFILE SECTION
+// AVAILABILITY SECTION
 // we will want this protected so you have to be logged in to visit
 // we will use route middleware to verify this (the isLoggedIn function)
   app.get('/availibility', isLoggedIn, function(req, res) {
@@ -33,6 +36,19 @@ module.exports = function(app, passport) {
       user : req.user // get the user out of session and pass to template
     });
   });
+
+  app.get('/bookings', isLoggedIn, function(req, res){
+    Booking
+      .find({})
+      .populate('user1', '_id name dob gender rating')
+      .exec(function(err, booking){
+      if(err) console.log(err)
+      if(!booking) return res.json()
+      // booking.push(req.user._id)
+      res.json(booking)
+    })
+  })
+
 
 // LOGOUT
   app.get('/logout', function(req, res) {
