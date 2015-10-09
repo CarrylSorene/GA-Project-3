@@ -31,7 +31,7 @@ robert.save(function(err, user) {
 });
 
 var booking1 = new Booking({
-  user: robert,
+  user1: robert,
   date: 2015-10-09
 });
 
@@ -41,7 +41,7 @@ booking1.save(function(err, booking1) {
 
    Booking
   .findOne(booking1.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking1) {
     // console.log('Booking1: ', booking1.user);
     if (err) console.log(err);
@@ -67,7 +67,7 @@ casey.save(function(err, user) {
 });
 
 var booking2 = new Booking({
-  user: casey,
+  user1: casey,
   date: 2015-10-09
 });
 
@@ -77,7 +77,7 @@ booking2.save(function(err, booking2) {
 
   Booking
   .findOne(booking2.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking2) {
     // console.log('Booking2: ', booking2);
     if (err) console.log(err);
@@ -103,7 +103,7 @@ willa.save(function(err, user) {
 });
 
 var booking3 = new Booking({
-  user: willa,
+  user1: willa,
   date: 2015-10-09
 });
 
@@ -113,7 +113,7 @@ booking3.save(function(err, booking3) {
 
   Booking
   .findOne(booking3.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking3) {
     if (err) console.log(err);
   });
@@ -138,7 +138,7 @@ samantha.save(function(err, user) {
 });
 
 var booking4 = new Booking({
-  user: samantha,
+  user1: samantha,
   date: 2015-10-11
 });
 
@@ -148,7 +148,7 @@ booking4.save(function(err, booking4) {
 
   Booking
   .findOne(booking4.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking4) {
     if (err) console.log(err);
   });
@@ -173,7 +173,7 @@ alicia.save(function(err, user) {
 });
 
 var booking5 = new Booking({
-  user: alicia,
+  user1: alicia,
   date: 2015-10-12
 });
 
@@ -183,7 +183,7 @@ booking5.save(function(err, booking5) {
 
   Booking
   .findOne(booking5.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking5) {
     if (err) console.log(err);
   });
@@ -208,7 +208,7 @@ andy.save(function(err, user) {
 });
 
 var booking6 = new Booking({
-  user: andy,
+  user1: andy,
   date: 2015-10-11
 });
 
@@ -218,7 +218,7 @@ booking6.save(function(err, booking6) {
 
   Booking
   .findOne(booking6.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking6) {
     if (err) console.log(err);
   });
@@ -242,7 +242,7 @@ ziggy.save(function(err, user) {
 });
 
 var booking7 = new Booking({
-  user: ziggy,
+  user1: ziggy,
   date: 2015-10-29
 });
 
@@ -252,7 +252,7 @@ booking7.save(function(err, booking7) {
 
    Booking
   .findOne(booking7.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking7) {
     if (err) console.log(err);
   });
@@ -276,7 +276,7 @@ drew.save(function(err, user) {
 });
 
 var booking8 = new Booking({
-  user: drew,
+  user1: drew,
   date: 2015-10-29
 });
 
@@ -286,7 +286,7 @@ booking8.save(function(err, booking8) {
 
    Booking
   .findOne(booking8.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking8) {
     if (err) console.log(err);
   });
@@ -309,7 +309,7 @@ marcus.save(function(err, user) {
 });
 
 var booking9 = new Booking({
-  user: marcus,
+  user1: marcus,
   date: 2015-10-11
 });
 
@@ -319,7 +319,7 @@ booking9.save(function(err, booking9) {
 
    Booking
   .findOne(booking9.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking9) {
     if (err) console.log(err);
   });
@@ -342,7 +342,7 @@ celia.save(function(err, user) {
 });
 
 var booking10 = new Booking({
-  user: celia,
+  user1: celia,
   date: 2015-10-11
 });
 
@@ -352,7 +352,7 @@ booking10.save(function(err, booking10) {
 
    Booking
   .findOne(booking10.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking10) {
     if (err) console.log(err);
   });
@@ -375,7 +375,7 @@ frankie.save(function(err, user) {
 });
 
 var booking11 = new Booking({
-  user: frankie,
+  user1: frankie,
   date: 2015-10-09
 });
 
@@ -385,7 +385,7 @@ booking11.save(function(err, booking11) {
 
    Booking
   .findOne(booking11.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking11) {
     if (err) console.log(err);
   });
@@ -408,7 +408,7 @@ claira.save(function(err, user) {
 });
 
 var booking12 = new Booking({
-  user: claira,
+  user1: claira,
   date: 2015-10-12
 });
 
@@ -418,7 +418,7 @@ booking12.save(function(err, booking12) {
 
    Booking
   .findOne(booking12.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking12) {
     if (err) console.log(err);
   });
@@ -441,7 +441,7 @@ ruby.save(function(err, user) {
 });
 
 var booking13 = new Booking({
-  user: ruby,
+  user1: ruby,
   date: 2015-10-09
 });
 
@@ -451,7 +451,7 @@ booking13.save(function(err, booking13) {
 
    Booking
   .findOne(booking13.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking13) {
     if (err) console.log(err);
   });
@@ -475,7 +475,7 @@ jason.save(function(err, user) {
 });
 
 var booking14 = new Booking({
-  user: jason,
+  user1: jason,
   date: 2015-10-09
 });
 
@@ -485,7 +485,7 @@ booking14.save(function(err, booking14) {
 
    Booking
   .findOne(booking14.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking14) {
     if (err) console.log(err);
   });
@@ -509,7 +509,7 @@ sasha.save(function(err, user) {
 });
 
 var booking15 = new Booking({
-  user: sasha,
+  user1: sasha,
   date: 2015-10-11
 });
 
@@ -519,7 +519,7 @@ booking15.save(function(err, booking15) {
 
    Booking
   .findOne(booking15.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking15) {
     if (err) console.log(err);
   });
@@ -543,7 +543,7 @@ freddi.save(function(err, user) {
 });
 
 var booking16 = new Booking({
-  user: freddi,
+  user1: freddi,
   date: 2015-10-09
 });
 
@@ -553,7 +553,7 @@ booking16.save(function(err, booking16) {
 
    Booking
   .findOne(booking16.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking16) {
     if (err) console.log(err);
   });
@@ -576,7 +576,7 @@ nick.save(function(err, user) {
 });
 
 var booking17 = new Booking({
-  user: nick,
+  user1: nick,
   date: 2015-10-09
 });
 
@@ -586,7 +586,7 @@ booking17.save(function(err, booking17) {
 
    Booking
   .findOne(booking17.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking17) {
     if (err) console.log(err);
   });
@@ -609,7 +609,7 @@ damian.save(function(err, user) {
 });
 
 var booking18 = new Booking({
-  user: damian,
+  user1: damian,
   date: 2015-10-29
 });
 
@@ -619,7 +619,7 @@ booking18.save(function(err, booking18) {
 
    Booking
   .findOne(booking18.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking18) {
     if (err) console.log(err);
   });
@@ -627,7 +627,7 @@ booking18.save(function(err, booking18) {
 
 //Booking19
 var booking19 = new Booking({
-  user: alicia,
+  user1: alicia,
   date: 2015-10-29
 });
 
@@ -637,7 +637,7 @@ booking19.save(function(err, booking19) {
 
    Booking
   .findOne(booking19.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking19) {
     if (err) console.log(err);
   });
@@ -645,7 +645,7 @@ booking19.save(function(err, booking19) {
 
 //Booking20
 var booking20 = new Booking({
-  user: ziggy,
+  user1: ziggy,
   date: 2015-10-14
 });
 
@@ -655,7 +655,7 @@ booking20.save(function(err, booking20) {
 
    Booking
   .findOne(booking20.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking20) {
     if (err) console.log(err);
   });
@@ -663,7 +663,7 @@ booking20.save(function(err, booking20) {
 
 //Booking21
 var booking21 = new Booking({
-  user: drew,
+  user1: drew,
   date: 2015-10-14
 });
 
@@ -673,7 +673,7 @@ booking21.save(function(err, booking21) {
 
    Booking
   .findOne(booking21.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking21) {
     if (err) console.log(err);
   });
@@ -681,7 +681,7 @@ booking21.save(function(err, booking21) {
 
 //Booking22
 var booking22 = new Booking({
-  user: robert,
+  user1: robert,
   date: 2015-10-13
 });
 
@@ -691,7 +691,7 @@ booking22.save(function(err, booking22) {
 
    Booking
   .findOne(booking22.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking22) {
     if (err) console.log(err);
   });
@@ -699,7 +699,7 @@ booking22.save(function(err, booking22) {
 
 //Booking23
 var booking23 = new Booking({
-  user: andy,
+  user1: andy,
   date: 2015-10-31
 });
 
@@ -709,7 +709,7 @@ booking23.save(function(err, booking23) {
 
    Booking
   .findOne(booking23.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking23) {
     if (err) console.log(err);
   });
@@ -717,7 +717,7 @@ booking23.save(function(err, booking23) {
 
 //Booking24
 var booking24 = new Booking({
-  user: celia,
+  user1: celia,
   date: 2015-10-31
 });
 
@@ -727,7 +727,7 @@ booking24.save(function(err, booking24) {
 
    Booking
   .findOne(booking24.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking24) {
     if (err) console.log(err);
   });
@@ -735,7 +735,7 @@ booking24.save(function(err, booking24) {
 
 //Booking25
 var booking25 = new Booking({
-  user: marcus,
+  user1: marcus,
   date: 2015-10-31
 });
 
@@ -745,7 +745,7 @@ booking25.save(function(err, booking25) {
 
    Booking
   .findOne(booking25.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking25) {
     if (err) console.log(err);
   });
@@ -753,7 +753,7 @@ booking25.save(function(err, booking25) {
 
 //Booking26
 var booking26 = new Booking({
-  user: nick,
+  user1: nick,
   date: 2015-10-13
 });
 
@@ -763,7 +763,7 @@ booking26.save(function(err, booking26) {
 
    Booking
   .findOne(booking26.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking26) {
     if (err) console.log(err);
   });
@@ -771,7 +771,7 @@ booking26.save(function(err, booking26) {
 
 //Booking27
 var booking27 = new Booking({
-  user: freddi,
+  user1: freddi,
   date: 2015-10-13
 });
 
@@ -781,7 +781,7 @@ booking27.save(function(err, booking27) {
 
    Booking
   .findOne(booking27.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking27) {
     if (err) console.log(err);
   });
@@ -789,7 +789,7 @@ booking27.save(function(err, booking27) {
 
 //Booking28
 var booking28 = new Booking({
-  user: willa,
+  user1: willa,
   date: 2015-10-13
 });
 
@@ -799,7 +799,7 @@ booking28.save(function(err, booking28) {
 
    Booking
   .findOne(booking28.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking28) {
     if (err) console.log(err);
   });
@@ -807,7 +807,7 @@ booking28.save(function(err, booking28) {
 
 //Booking29
 var booking29 = new Booking({
-  user: claira,
+  user1: claira,
   date: 2015-10-14
 });
 
@@ -817,7 +817,7 @@ booking29.save(function(err, booking29) {
 
    Booking
   .findOne(booking29.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking29) {
     if (err) console.log(err);
   });
@@ -825,7 +825,7 @@ booking29.save(function(err, booking29) {
 
 //Booking30
 var booking30 = new Booking({
-  user: casey,
+  user1: casey,
   date: 2015-10-11
 });
 
@@ -835,7 +835,7 @@ booking30.save(function(err, booking30) {
 
    Booking
   .findOne(booking30.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking30) {
     if (err) console.log(err);
   });
@@ -844,7 +844,7 @@ booking30.save(function(err, booking30) {
 
 //Booking31
 var booking31 = new Booking({
-  user: damian,
+  user1: damian,
   date: 2015-10-14
 });
 
@@ -854,7 +854,7 @@ booking31.save(function(err, booking31) {
 
    Booking
   .findOne(booking31.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking31) {
     if (err) console.log(err);
   });
@@ -862,7 +862,7 @@ booking31.save(function(err, booking31) {
 
 //Booking32
 var booking32 = new Booking({
-  user: freddi,
+  user1: freddi,
   date: 2015-10-09
 });
 
@@ -872,7 +872,7 @@ booking32.save(function(err, booking32) {
 
    Booking
   .findOne(booking32.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking32) {
     if (err) console.log(err);
   });
@@ -880,7 +880,7 @@ booking32.save(function(err, booking32) {
 
 //Booking33
 var booking33 = new Booking({
-  user: frankie,
+  user1: frankie,
   date: 2015-10-11
 });
 
@@ -890,7 +890,7 @@ booking33.save(function(err, booking33) {
 
    Booking
   .findOne(booking33.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking33) {
     if (err) console.log(err);
   });
@@ -898,7 +898,7 @@ booking33.save(function(err, booking33) {
 
 //Booking34
 var booking34 = new Booking({
-  user: jason,
+  user1: jason,
   date: 2015-10-13
 });
 
@@ -908,7 +908,7 @@ booking34.save(function(err, booking34) {
 
    Booking
   .findOne(booking34.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking34) {
     if (err) console.log(err);
   });
@@ -916,7 +916,7 @@ booking34.save(function(err, booking34) {
 
 //Booking35
 var booking35 = new Booking({
-  user: ruby,
+  user1: ruby,
   date: 2015-10-13
 });
 
@@ -926,7 +926,7 @@ booking35.save(function(err, booking35) {
 
    Booking
   .findOne(booking35.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking35) {
     if (err) console.log(err);
   });
@@ -934,7 +934,7 @@ booking35.save(function(err, booking35) {
 
 //Booking36
 var booking36 = new Booking({
-  user: sasha,
+  user1: sasha,
   date: 2015-10-11
 });
 
@@ -944,7 +944,7 @@ booking36.save(function(err, booking36) {
 
    Booking
   .findOne(booking36.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking36) {
     if (err) console.log(err);
   });
@@ -952,7 +952,7 @@ booking36.save(function(err, booking36) {
 
 //Booking37
 var booking37 = new Booking({
-  user: sasha,
+  user1: sasha,
   date: 2015-10-31
 });
 
@@ -962,7 +962,7 @@ booking37.save(function(err, booking37) {
 
    Booking
   .findOne(booking37.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking37) {
     if (err) console.log(err);
   });
@@ -970,7 +970,7 @@ booking37.save(function(err, booking37) {
 
 //Booking38
 var booking38 = new Booking({
-  user: ziggy,
+  user1: ziggy,
   date: 2015-10-23
 });
 
@@ -980,7 +980,7 @@ booking38.save(function(err, booking38) {
 
    Booking
   .findOne(booking38.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking38) {
     if (err) console.log(err);
   });
@@ -988,7 +988,7 @@ booking38.save(function(err, booking38) {
 
 //Booking39
 var booking39 = new Booking({
-  user: drew,
+  user1: drew,
   date: 2015-10-13
 });
 
@@ -998,7 +998,7 @@ booking39.save(function(err, booking39) {
 
    Booking
   .findOne(booking39.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking39) {
     if (err) console.log(err);
   });
@@ -1006,7 +1006,7 @@ booking39.save(function(err, booking39) {
 
 //Booking40
 var booking40 = new Booking({
-  user: damian,
+  user1: damian,
   date: 2015-10-24
 });
 
@@ -1016,7 +1016,7 @@ booking40.save(function(err, booking40) {
 
    Booking
   .findOne(booking40.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking40) {
     if (err) console.log(err);
   });
@@ -1024,7 +1024,7 @@ booking40.save(function(err, booking40) {
 
 //Booking41
 var booking41 = new Booking({
-  user: alicia,
+  user1: alicia,
   date: 2015-10-24
 });
 
@@ -1034,7 +1034,7 @@ booking41.save(function(err, booking41) {
 
    Booking
   .findOne(booking41.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking41) {
     if (err) console.log(err);
   });
@@ -1042,7 +1042,7 @@ booking41.save(function(err, booking41) {
 
 //Booking42
 var booking42 = new Booking({
-  user: robert,
+  user1: robert,
   date: 2015-10-26
 });
 
@@ -1052,7 +1052,7 @@ booking42.save(function(err, booking42) {
 
    Booking
   .findOne(booking42.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking42) {
     if (err) console.log(err);
   });
@@ -1060,7 +1060,7 @@ booking42.save(function(err, booking42) {
 
 //Booking43
 var booking43 = new Booking({
-  user: claira,
+  user1: claira,
   date: 2015-10-18
 });
 
@@ -1070,7 +1070,7 @@ booking43.save(function(err, booking43) {
 
    Booking
   .findOne(booking43.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking43) {
     if (err) console.log(err);
   });
@@ -1078,7 +1078,7 @@ booking43.save(function(err, booking43) {
 
 //Booking44
 var booking44 = new Booking({
-  user: freddi,
+  user1: freddi,
   date: 2015-10-26
 });
 
@@ -1088,7 +1088,7 @@ booking44.save(function(err, booking44) {
 
    Booking
   .findOne(booking44.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking44) {
     if (err) console.log(err);
   });
@@ -1096,7 +1096,7 @@ booking44.save(function(err, booking44) {
 
 //Booking45
 var booking45 = new Booking({
-  user: samantha,
+  user1: samantha,
   date: 2015-10-18
 });
 
@@ -1106,7 +1106,7 @@ booking45.save(function(err, booking45) {
 
    Booking
   .findOne(booking45.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking45) {
     if (err) console.log(err);
   });
@@ -1114,7 +1114,7 @@ booking45.save(function(err, booking45) {
 
 //Booking46
 var booking46 = new Booking({
-  user: casey,
+  user1: casey,
   date: 2015-10-17
 });
 
@@ -1124,7 +1124,7 @@ booking46.save(function(err, booking46) {
 
    Booking
   .findOne(booking46.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking46) {
     if (err) console.log(err);
   });
@@ -1132,7 +1132,7 @@ booking46.save(function(err, booking46) {
 
 //Booking47
 var booking47 = new Booking({
-  user: frankie,
+  user1: frankie,
   date: 2015-10-17
 });
 
@@ -1142,7 +1142,7 @@ booking47.save(function(err, booking47) {
 
    Booking
   .findOne(booking47.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking47) {
     if (err) console.log(err);
   });
@@ -1150,7 +1150,7 @@ booking47.save(function(err, booking47) {
 
 //Booking48
 var booking48 = new Booking({
-  user: jason,
+  user1: jason,
   date: 2015-10-20
 });
 
@@ -1160,7 +1160,7 @@ booking48.save(function(err, booking48) {
 
    Booking
   .findOne(booking48.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking48) {
     if (err) console.log(err);
   });
@@ -1168,7 +1168,7 @@ booking48.save(function(err, booking48) {
 
 //Booking49
 var booking49 = new Booking({
-  user: willa,
+  user1: willa,
   date: 2015-10-20
 });
 
@@ -1178,7 +1178,7 @@ booking49.save(function(err, booking49) {
 
    Booking
   .findOne(booking49.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking49) {
     if (err) console.log(err);
   });
@@ -1186,7 +1186,7 @@ booking49.save(function(err, booking49) {
 
 //Booking50
 var booking50 = new Booking({
-  user: nick,
+  user1: nick,
   date: 2015-10-31
 });
 
@@ -1196,7 +1196,7 @@ booking50.save(function(err, booking50) {
 
    Booking
   .findOne(booking50.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking50) {
     if (err) console.log(err);
   });
@@ -1205,7 +1205,7 @@ booking50.save(function(err, booking50) {
 
 //Booking51
 var booking51 = new Booking({
-  user: ruby,
+  user1: ruby,
   date: 2015-10-20
 });
 
@@ -1215,7 +1215,7 @@ booking51.save(function(err, booking51) {
 
    Booking
   .findOne(booking51.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking51) {
     if (err) console.log(err);
   });
@@ -1223,7 +1223,7 @@ booking51.save(function(err, booking51) {
 
 //Booking52
 var booking52 = new Booking({
-  user: celia,
+  user1: celia,
   date: 2015-10-27
 });
 
@@ -1233,7 +1233,7 @@ booking52.save(function(err, booking52) {
 
    Booking
   .findOne(booking52.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking52) {
     if (err) console.log(err);
   });
@@ -1241,7 +1241,7 @@ booking52.save(function(err, booking52) {
 
 //Booking53
 var booking53 = new Booking({
-  user: marcus,
+  user1: marcus,
   date: 2015-10-16
 });
 
@@ -1251,7 +1251,7 @@ booking53.save(function(err, booking53) {
 
    Booking
   .findOne(booking53.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking53) {
     if (err) console.log(err);
   });
@@ -1259,7 +1259,7 @@ booking53.save(function(err, booking53) {
 
 //Booking54
 var booking54 = new Booking({
-  user: sasha,
+  user1: sasha,
   date: 2015-10-16
 });
 
@@ -1269,7 +1269,7 @@ booking54.save(function(err, booking54) {
 
    Booking
   .findOne(booking54.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking54) {
     if (err) console.log(err);
   });
@@ -1277,7 +1277,7 @@ booking54.save(function(err, booking54) {
 
 //Booking55
 var booking55 = new Booking({
-  user: andy,
+  user1: andy,
   date: 2015-10-27
 });
 
@@ -1287,7 +1287,7 @@ booking55.save(function(err, booking55) {
 
    Booking
   .findOne(booking55.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking55) {
     if (err) console.log(err);
   });
@@ -1295,7 +1295,7 @@ booking55.save(function(err, booking55) {
 
 //Booking56
 var booking56 = new Booking({
-  user: nick,
+  user1: nick,
   date: 2015-10-27
 });
 
@@ -1305,7 +1305,7 @@ booking56.save(function(err, booking56) {
 
    Booking
   .findOne(booking56.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking56) {
     if (err) console.log(err);
   });
@@ -1313,7 +1313,7 @@ booking56.save(function(err, booking56) {
 
 //Booking57
 var booking57 = new Booking({
-  user: celia,
+  user1: celia,
   date: 2015-10-09
 });
 
@@ -1323,7 +1323,7 @@ booking57.save(function(err, booking57) {
 
    Booking
   .findOne(booking57.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking57) {
     if (err) console.log(err);
   });
@@ -1331,7 +1331,7 @@ booking57.save(function(err, booking57) {
 
 //Booking58
 var booking58 = new Booking({
-  user: marcus,
+  user1: marcus,
   date: 2015-10-13
 });
 
@@ -1341,7 +1341,7 @@ booking58.save(function(err, booking58) {
 
    Booking
   .findOne(booking58.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking58) {
     if (err) console.log(err);
   });
@@ -1349,7 +1349,7 @@ booking58.save(function(err, booking58) {
 
 //Booking59
 var booking59 = new Booking({
-  user: sasha,
+  user1: sasha,
   date: 2015-10-27
 });
 
@@ -1359,7 +1359,7 @@ booking59.save(function(err, booking59) {
 
    Booking
   .findOne(booking59.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking59) {
     if (err) console.log(err);
   });
@@ -1367,7 +1367,7 @@ booking59.save(function(err, booking59) {
 
 //Booking60
 var booking60 = new Booking({
-  user: andy,
+  user1: andy,
   date: 2015-10-16
 });
 
@@ -1377,7 +1377,7 @@ booking60.save(function(err, booking60) {
 
    Booking
   .findOne(booking60.id)
-  .populate('user')
+  .populate('user1')
   .exec(function(err, booking60) {
     if (err) console.log(err);
   });

@@ -38,10 +38,13 @@ module.exports = function(app, passport) {
   });
 
   app.get('/bookings', isLoggedIn, function(req, res){
-    Booking.find({}, function(err, booking){
+    Booking
+      .find({})
+      .populate('user1', '_id name dob gender rating')
+      .exec(function(err, booking){
       if(err) console.log(err)
-      booking.push(req.user._id)
-      console.log(booking)
+      if(!booking) return res.json()
+      // booking.push(req.user._id)
       res.json(booking)
     })
   })
