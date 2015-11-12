@@ -37,6 +37,10 @@ module.exports = function(app, passport) {
     });
   });
 
+  app.post('/availibility', isLoggedIn, function(req, res) {
+    res.json(req.user)
+  });
+
   app.get('/bookings', isLoggedIn, function(req, res){
     Booking
       .find({})

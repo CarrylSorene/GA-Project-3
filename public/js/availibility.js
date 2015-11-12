@@ -34,10 +34,16 @@ var setListeners = function(){
 
 var toggleMode = function(){
   if ($('#mode-switch').is(':checked')){
+    // Set availibility
     $('#show-me').toggleClass('red-text', true)
     $('#show-them').toggleClass('red-text', false)
+    $('td').on('click', function(){
+      console.log('Clicked!')
+    })
   } else {
+    // View availibility
     $('#show-me').toggleClass('red-text', false)
     $('#show-them').toggleClass('red-text', true)
+    $('td').off('click')
   }
 }
