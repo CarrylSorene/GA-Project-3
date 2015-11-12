@@ -1,30 +1,52 @@
 $(document).ready(function(){
   // console.log('Hello world!')
-  renderDates()
-  renderBookings()
+  renderCalendar()
+  // renderBookings()
   setListeners()
 })
 
-var renderDates = function(){
-  var thisMonth = moment().format('MMMM')
-  $('#month').text(thisMonth)
+var renderCalendar = function(){
+  setCurrentMonth()
+  var bookings = getBookings()
+  console.log(bookings)
   var daysAhead = moment().date(1).day()
   for(i = 0; i < 35; i++) {
-    var currentDay = moment().date(2 - daysAhead + i)
-    if( (currentDay.month() !== moment().month()) || currentDay.date() < moment().date() ){
-      $('#d' + i).html('<span class="unavailable">' + currentDay.date() + '</span>')
-    } else if(currentDay.date() === moment().date() && currentDay.month() === moment().month()) {
-      $('#d' + i).html('<span class="today">' + currentDay.date() + '</span>')
+    var iDay = moment().date(2 - daysAhead + i).date()
+    var iMonth = moment().date(2 - daysAhead + i).month()
+    var current = moment()
+    var cellId = '#d' + i
+    if( (iMonth !== current.month()) || iDay < current.date() ){
+      setCell(cellId, iDay, 'unavailable')
+    } else if(iDay === current.date() && iMonth === current.month()) {
+      setCell(cellId, iDay, 'today')
     } else {
-      $('#d' + i).html(currentDay.date())
+      setCell(cellId, iDay)
     }
   }
 }
 
-var renderBookings = function(){
+function setCell(id, date, status, bookings){
+  var contents = $(id).html()
+  if(!status){
+    contents += '<span class="date-label">' + date + '</span>'
+  } else {
+    contents += '<span class="date-label ' + status + '">' + date + '</span>'
+  }
+  contents += '<div class="chip right amber darken-2">1</div>'
+  contents += '<div class="chip right green accent-2">2</div>'
+  $(id).html(contents)
+}
+
+function setCurrentMonth() {
+  var thisMonth = moment().format('MMMM')
+  $('#month').text(thisMonth)
+}
+
+var getBookings = function(){
   $.get('/bookings')
   .done(function(data){
     console.log(data)
+    return data
   })
 }
 
@@ -38,7 +60,7 @@ var toggleMode = function(){
     $('#show-me').toggleClass('red-text', true)
     $('#show-them').toggleClass('red-text', false)
     $('td').on('click', function(){
-      setAvailibility($(this).text())
+      setAvailibility($(this).find('.date-label').text())
     })
   } else {
     // View availibility
