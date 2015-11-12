@@ -38,7 +38,7 @@ var toggleMode = function(){
     $('#show-me').toggleClass('red-text', true)
     $('#show-them').toggleClass('red-text', false)
     $('td').on('click', function(){
-      console.log('Clicked!')
+      setAvailibility($(this).text())
     })
   } else {
     // View availibility
@@ -46,4 +46,12 @@ var toggleMode = function(){
     $('#show-them').toggleClass('red-text', true)
     $('td').off('click')
   }
+}
+
+function setAvailibility(day){
+  var selectedDate = moment().date(day).format()
+  $.post('/availibility', {date: selectedDate})
+    .done(function(data){
+      console.log(data)
+    })
 }
