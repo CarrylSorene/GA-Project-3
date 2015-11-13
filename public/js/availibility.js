@@ -52,19 +52,25 @@ function getBookings(){
 }
 
 function renderBookings(){
+    var currentUser = bookings.user
   $.each(bookings.data, function(index, booking){
-    var tempdate = booking.date
-    tempdate = tempdate.slice(0, tempdate.indexOf('T'))
-
+    var bookingDate = booking.date
+    bookingDate = bookingDate.slice(0, bookingDate.indexOf('T'))
+    var bookingUser = booking.user1[0]._id
     $('.date-label').parent().each(function(index, cell){
-    var celldate = $(cell).data('date')
-    celldate = celldate.slice(0, celldate.indexOf('T'))
-    if(celldate === tempdate){
-      var contents = $(cell).html()
-      contents += '<div class="chip right amber darken-2">1</div>'
-      $(cell).html(contents)
-    }
-  })
+      var cellDate = $(cell).data('date')
+      cellDate = cellDate.slice(0, cellDate.indexOf('T'))  
+      if(cellDate === bookingDate){
+        var contents = $(cell).html()
+        if(currentUser === bookingUser) {
+          contents += '<div class="chip right amber darken-2">1</div>'
+        } else {
+          contents += '<div class="chip right green accent-2">1</div>'
+        }
+        $(cell).html(contents)
+      }
+    })
+
   })
 }
 
