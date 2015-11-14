@@ -33,8 +33,6 @@ function setCell(id, date, status, bookings){
   } else {
     contents += '<span class="date-label ' + status + '">' + date + '</span>'
   }
-  // contents += '<div class="chip right amber darken-2">1</div>'
-  // contents += '<div class="chip right green accent-2">2</div>'
   $(id).html(contents)
 }
 
@@ -54,24 +52,29 @@ function getBookings(){
 function renderBookings(){
     var currentUser = bookings.user
   $.each(bookings.data, function(index, booking){
-    var bookingDate = booking.date
-    bookingDate = bookingDate.slice(0, bookingDate.indexOf('T'))
+    var bookingDate = trimDate(booking.date)
     var bookingUser = booking.user1[0]._id
     $('.date-label').parent().each(function(index, cell){
-      var cellDate = $(cell).data('date')
-      cellDate = cellDate.slice(0, cellDate.indexOf('T'))  
+      var cellDate = trimDate($(cell).data('date'))
       if(cellDate === bookingDate){
-        var contents = $(cell).html()
-        if(currentUser === bookingUser) {
-          contents += '<div class="chip right amber darken-2">1</div>'
-        } else {
-          contents += '<div class="chip right green accent-2">1</div>'
-        }
-        $(cell).html(contents)
+        renderCell(cell, currentUser, bookingUser)
       }
     })
-
   })
+}
+
+function renderCell(cell, currentUser, bookingUser){
+  var contents = $(cell).html()
+  if(currentUser === bookingUser) {
+    contents += '<div class="chip right amber darken-2">1</div>'
+  } else {
+    contents += '<div class="chip right green accent-2">1</div>'
+  }
+  $(cell).html(contents)
+}
+
+function trimDate(datetime){
+  return datetime.slice(0, datetime.indexOf('T'))
 }
 
 function setListeners(){
