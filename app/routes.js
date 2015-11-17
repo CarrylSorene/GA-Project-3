@@ -48,14 +48,16 @@ module.exports = function(app, passport) {
   });
 
   app.get('/bookings', isLoggedIn, function(req, res){
+    var bookings = {}
     Booking
       .find({})
       .populate('user1', '_id name dob gender rating')
-      .exec(function(err, booking){
+      .exec(function(err, data){
       if(err) console.log(err)
-      if(!booking) return res.json()
-      // booking.push(req.user._id)
-      res.json(booking)
+      bookings.user = req.user._id
+      if(!data) return res.json(bookings)
+      bookings.data = data
+      res.json(bookings)
     })
   })
 

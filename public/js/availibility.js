@@ -1,19 +1,19 @@
 $(document).ready(function(){
   // console.log('Hello world!')
   renderCalendar()
-  // renderBookings()
   setListeners()
 })
 
-var renderCalendar = function(){
+var bookings
+
+function renderCalendar(){
+  getBookings()
   setCurrentMonth()
-  var bookings = getBookings()
-  console.log(bookings)
+  var current = moment()
   var daysAhead = moment().date(1).day()
   for(i = 0; i < 35; i++) {
     var iDay = moment().date(2 - daysAhead + i).date()
     var iMonth = moment().date(2 - daysAhead + i).month()
-    var current = moment()
     var cellId = '#d' + i
     if( (iMonth !== current.month()) || iDay < current.date() ){
       setCell(cellId, iDay, 'unavailable')
@@ -22,6 +22,7 @@ var renderCalendar = function(){
     } else {
       setCell(cellId, iDay)
     }
+  $(cellId).data('date', moment().date(2 - daysAhead + i).format())
   }
 }
 
@@ -32,8 +33,6 @@ function setCell(id, date, status, bookings){
   } else {
     contents += '<span class="date-label ' + status + '">' + date + '</span>'
   }
-  contents += '<div class="chip right amber darken-2">1</div>'
-  contents += '<div class="chip right green accent-2">2</div>'
   $(id).html(contents)
 }
 
@@ -42,19 +41,47 @@ function setCurrentMonth() {
   $('#month').text(thisMonth)
 }
 
-var getBookings = function(){
+function getBookings(){
   $.get('/bookings')
   .done(function(data){
-    console.log(data)
-    return data
+    bookings = data
+    renderBookings()
   })
 }
 
-var setListeners = function(){
+function renderBookings(){
+    var currentUser = bookings.user
+  $.each(bookings.data, function(index, booking){
+    var bookingDate = trimDate(booking.date)
+    var bookingUser = booking.user1[0]._id
+    $('.date-label').parent().each(function(index, cell){
+      var cellDate = trimDate($(cell).data('date'))
+      if(cellDate === bookingDate){
+        renderCell(cell, currentUser, bookingUser)
+      }
+    })
+  })
+}
+
+function renderCell(cell, currentUser, bookingUser){
+  var contents = $(cell).html()
+  if(currentUser === bookingUser) {
+    contents += '<div class="chip right amber darken-2">1</div>'
+  } else {
+    contents += '<div class="chip right green accent-2">1</div>'
+  }
+  $(cell).html(contents)
+}
+
+function trimDate(datetime){
+  return datetime.slice(0, datetime.indexOf('T'))
+}
+
+function setListeners(){
   $('#mode-switch').on('change', toggleMode)
 }
 
-var toggleMode = function(){
+function toggleMode(){
   if ($('#mode-switch').is(':checked')){
     // Set availibility
     $('#show-me').toggleClass('red-text', true)
