@@ -4,7 +4,7 @@
 
 A site for people to find a tennis partner.
 
-![](https://CarrylSorene/GA-Project-3/blob/development/public/img/wesport.tiff)
+<!-- ![](https://CarrylSorene/GA-Project-3/blob/development/public/img/wesport.tiff) -->
 
 ### Approach
 
